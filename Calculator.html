@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="Calculator.css">
 </head>
 <body>
- 
-    <div class="Continer">
-      <div class="Calculator">
-         
-        <input type="text" placeholder="">
-        <button onclick="clear()">CL</button>
-        <button onclick="del()">Del</button>
-        <button onclick="display(1)">CL</button>
-        <button onclick="display(2)">CL</button>
-        <button onclick="clear()">CL</button>
-        <button onclick="clear()">CL</button>
-        <button onclick="clear()">CL</button>
+  <div class="Container">
+    <div class="Calculator">
+      <input class="input" id="output-screen"  type="text" aria-label="Display" placeholder="0">
+      <button onclick="clearDisplay()">CL</button>
+      <button onclick="del()">Del</button>
+      <button onclick="display('%')">%</button>
+      <button onclick="display('/')">/</button>
+       <button onclick="display('9')">9</button>
+      <button onclick="display('8')">8</button>
+      <button onclick="display('7')">7</button>
+      <button onclick="display('*')">*</button>
+      <button onclick="display('6')">6</button>
+      <button onclick="display('5')">5</button>
+      <button onclick="display('4')">4</button>
+      <button onclick="display('-')">-</button>
+      <button onclick="display('3')">3</button>
+      <button onclick="display('2')">2</button> 
+      <button onclick="display('1')">1</button>
+      <button onclick="display('+')">+</button>
+      <button onclick="display('.')">.</button>
+      <button onclick="display('0')">0</button>
 
-
-
-
-
-
-
-      </div>
+      <button onclick="calculate()" class="equals">=</button>
     </div>
+  </div>
+  <script src="Calculator.js"></script>
+
 
 </body>
 </html>
